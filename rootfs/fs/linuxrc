@@ -1,0 +1,12 @@
+#!/bin/sh
+
+# Mount the proc filesystem if necessary
+#
+if [ ! -f /proc/mounts ]; then
+  mount -t proc proc /proc
+fi
+
+# Make a shell prompt
+#   --login : execute /etc/profile
+#
+bash --login
