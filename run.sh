@@ -1,12 +1,10 @@
 #!/bin/sh
 
-if [ $1 = "unpack" ]
-then
+if [ "$1" = "unpack" ];then
 	cd rootfs
 	./unpack.sh
 	cd -
-elif [ $1 = "pack" ]
-then
+elif [ "$1" = "pack" ];then
 	cd rootfs
 	./pack.sh
 	cd -
