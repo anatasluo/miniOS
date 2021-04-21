@@ -9,5 +9,10 @@ elif [ "$1" = "pack" ];then
 	./pack.sh
 	cd -
 else
-	qemu-system-x86_64  -s -nographic -no-reboot -m 256 -kernel ./kernel/bzImage -initrd ./rootfs/rootfs.cpio.gz -append "nokaslr panic=1 HOST=x86_64 console=ttyS0" ;echo -e '\e[?7h'
+	qemu-system-aarch64 -smp 4 -M virt -m 1024 -cpu cortex-a53 \
+		-kernel /home/anatasluo/Git/linux/arch/arm64/boot/Image \
+		-initrd ./rootfs/rootfs.cpio.gz \
+		-append 'nokaslr root=/dev/vda console=ttyAMA0' \
+		-netdev user,id=mynet \
+		-device virtio-net-pci,netdev=mynet -nographic 
 fi
