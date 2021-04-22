@@ -10,7 +10,7 @@ elif [ "$1" = "pack" ];then
 	cd -
 else
 	qemu-system-aarch64 -smp 4 -M virt -m 1024 -cpu cortex-a53 \
-		-kernel /home/anatasluo/Git/linux/arch/arm64/boot/Image \
+		-kernel ./kernel/Image \
 		-initrd ./rootfs/rootfs.cpio.gz \
 		-append 'nokaslr console=ttyAMA0' \
 		-netdev user,id=mynet \
