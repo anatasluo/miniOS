@@ -9,7 +9,7 @@ elif [ "$1" = "pack" ];then
 	./pack.sh
 	cd -
 else
-	qemu-system-aarch64 -smp 4 -M virt -m 1024 -cpu cortex-a53 \
+	qemu-system-aarch64 -s -smp 4 -M virt -m 1024 -cpu cortex-a53 \
 		-kernel ./kernel/Image \
 		-initrd ./rootfs/rootfs.cpio.gz \
 		-append 'nokaslr console=ttyAMA0' \
