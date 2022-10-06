@@ -1,0 +1,7 @@
+root:$6$.Xx/H/sOh/s0ArjB$qo9UVelazqTDN1angvaPI5GOfkk29K.SlqU63BSvpXTjZGHhp5BvySSO9PE50mzYbhQVRfDVUxRmdrvcyJ2WK/:19269:0:99999:7:::
+bin:x:19269:0:99999:7:::
+daemon:x:19269:0:99999:7:::
+messagebus:x:19269:0:99999:7:::
+uuidd:x:19269:0:99999:7:::
+nobody:x:19269:0:99999:7:::
+tester:x:19269:0:99999:7:::

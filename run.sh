@@ -9,5 +9,5 @@ elif [ "$1" = "pack" ];then
 	./pack.sh
 	cd -
 else
-	qemu-system-x86_64  -s -nographic -no-reboot -m 256 -kernel ./kernel/bzImage -initrd ./rootfs/rootfs.cpio.gz -append "nokaslr panic=1 HOST=x86_64 console=ttyS0" ;echo -e '\e[?7h'
+	qemu-system-x86_64 -s -nographic -no-reboot -net nic -m 4G -kernel ./kernel/bzImage -initrd ./rootfs/rootfs.cpio.gz -append "panic=1 HOST=x86_64 console=ttyS0" ;echo -e '\e[?7h'
 fi

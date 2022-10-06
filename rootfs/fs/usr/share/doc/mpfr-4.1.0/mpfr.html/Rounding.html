@@ -1,0 +1,188 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<!-- Created by GNU Texinfo 6.8, https://www.gnu.org/software/texinfo/ -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- This manual documents how to install and use the Multiple Precision
+Floating-Point Reliable Library, version 4.1.0.
+
+Copyright 1991, 1993-2020 Free Software Foundation, Inc.
+
+Permission is granted to copy, distribute and/or modify this document under
+the terms of the GNU Free Documentation License, Version 1.2 or any later
+version published by the Free Software Foundation; with no Invariant Sections,
+with no Front-Cover Texts, and with no Back-Cover Texts.  A copy of the
+license is included in GNU Free Documentation License. -->
+<title>Rounding (GNU MPFR 4.1.0)</title>
+
+<meta name="description" content="How to install and use GNU MPFR, a library for reliable multiple precision
+floating-point arithmetic, version 4.1.0.">
+<meta name="keywords" content="Rounding (GNU MPFR 4.1.0)">
+<meta name="resource-type" content="document">
+<meta name="distribution" content="global">
+<meta name="Generator" content="makeinfo">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<link href="index.html" rel="start" title="Top">
+<link href="Concept-Index.html" rel="index" title="Concept Index">
+<link href="MPFR-Basics.html" rel="up" title="MPFR Basics">
+<link href="Floating_002dPoint-Values-on-Special-Numbers.html" rel="next" title="Floating-Point Values on Special Numbers">
+<link href="MPFR-Variable-Conventions.html" rel="prev" title="MPFR Variable Conventions">
+<style type="text/css">
+<!--
+a.copiable-anchor {visibility: hidden; text-decoration: none; line-height: 0em}
+a.summary-letter {text-decoration: none}
+blockquote.indentedblock {margin-right: 0em}
+div.display {margin-left: 3.2em}
+div.example {margin-left: 3.2em}
+kbd {font-style: oblique}
+pre.display {font-family: inherit}
+pre.format {font-family: inherit}
+pre.menu-comment {font-family: serif}
+pre.menu-preformatted {font-family: serif}
+span.nolinebreak {white-space: nowrap}
+span.roman {font-family: initial; font-weight: normal}
+span.sansserif {font-family: sans-serif; font-weight: normal}
+span:hover a.copiable-anchor {visibility: visible}
+ul.no-bullet {list-style: none}
+-->
+</style>
+
+
+</head>
+
+<body lang="en">
+<div class="section" id="Rounding">
+<div class="header">
+<p>
+Next: <a href="Floating_002dPoint-Values-on-Special-Numbers.html" accesskey="n" rel="next">Floating-Point Values on Special Numbers</a>, Previous: <a href="MPFR-Variable-Conventions.html" accesskey="p" rel="prev">MPFR Variable Conventions</a>, Up: <a href="MPFR-Basics.html" accesskey="u" rel="up">MPFR Basics</a> &nbsp; [<a href="Concept-Index.html" title="Index" rel="index">Index</a>]</p>
+</div>
+<hr>
+<span id="Rounding-1"></span><h3 class="section">4.4 Rounding</h3>
+
+<p>The following rounding modes are supported:
+</p>
+<ul>
+<li> <code>MPFR_RNDN</code>: round to nearest, with the even rounding rule
+      (roundTiesToEven in IEEE&nbsp;754-2008); see details below.
+
+</li><li> <code>MPFR_RNDD</code>: round toward minus infinity
+      (roundTowardNegative in IEEE&nbsp;754-2008).
+
+</li><li> <code>MPFR_RNDU</code>: round toward plus infinity
+      (roundTowardPositive in IEEE&nbsp;754-2008).
+
+</li><li> <code>MPFR_RNDZ</code>: round toward zero
+      (roundTowardZero in IEEE&nbsp;754-2008).
+
+</li><li> <code>MPFR_RNDA</code>: round away from zero.
+
+</li><li> <code>MPFR_RNDF</code>: faithful rounding. This feature is currently
+experimental. Specific support for this rounding mode has been added
+to some functions, such as the basic operations (addition, subtraction,
+multiplication, square, division, square root) or when explicitly
+documented. It might also work with other functions, as it is possible that
+they do not need modification in their code; even though a correct behavior
+is not guaranteed yet (corrections were done when failures occurred in the
+test suite, but almost nothing has been checked manually), failures should
+be regarded as bugs and reported, so that they can be fixed.
+
+</li></ul>
+
+<p>Note that, in particular for a result equal to zero, the sign is preserved
+by the rounding operation.
+</p>
+<p>The <code>MPFR_RNDN</code> mode works like roundTiesToEven from the
+IEEE&nbsp;754 standard: in case the number to be rounded lies exactly
+in the middle between two consecutive representable numbers, it is
+rounded to the one with an even significand; in radix 2, this means
+that the least significant bit is 0. For example, the number 2.5,
+which is represented by (10.1) in binary, is rounded to (10.0)=2 with
+a precision of two bits, and not to (11.0)=3.
+This rule avoids the <em>drift</em> phenomenon mentioned by Knuth in volume 2
+of The Art of Computer Programming (Section&nbsp;4.2.2).
+</p>
+<p>Note: In particular for a 1-digit precision (in radix 2 or other radices,
+as in conversions to a string of digits), one considers the significands
+associated with the exponent of the number to be rounded. For instance,
+to round the number 95 in radix 10 with a 1-digit precision, one considers
+its truncated 1-digit integer significand 9 and the following integer 10
+(since these are consecutive integers, exactly one of them is even).
+10 is the even significand, so that 95 will be rounded to 100, not to 90.
+</p>
+<p>For the <em>directed rounding modes</em>, a number <var>x</var> is rounded to
+the number <var>y</var> that is the closest to <var>x</var> such that
+</p><ul>
+<li> <code>MPFR_RNDD</code>:
+      <var>y</var> is less than or equal to <var>x</var>;
+</li><li> <code>MPFR_RNDU</code>:
+      <var>y</var> is greater than or equal to <var>x</var>;
+</li><li> <code>MPFR_RNDZ</code>:
+      abs(<var>y</var>) is less than or equal to abs(<var>x</var>);
+</li><li> <code>MPFR_RNDA</code>:
+      abs(<var>y</var>) is greater than or equal to abs(<var>x</var>).
+</li></ul>
+
+<p>The <code>MPFR_RNDF</code> mode works as follows: the computed value is either
+that corresponding to <code>MPFR_RNDD</code> or that corresponding to
+<code>MPFR_RNDU</code>.
+In particular when those values are identical,
+i.e., when the result of the corresponding operation is exactly
+representable, that exact result is returned.
+Thus, the computed result can take at most two possible values, and
+in absence of underflow/overflow, the corresponding error is strictly
+less than one ulp (unit in the last place) of that result and of the
+exact result.
+For <code>MPFR_RNDF</code>, the ternary value (defined below) and the inexact flag
+(defined later, as with the other flags) are unspecified, the divide-by-zero
+flag is as with other roundings, and the underflow and overflow flags match
+what would be obtained in the case the computed value is the same as with
+<code>MPFR_RNDD</code> or <code>MPFR_RNDU</code>.
+The results may not be reproducible.
+</p>
+<span id="ternary-value"></span><span id="index-Ternary-value"></span>
+<p>Most MPFR functions take as first argument the destination variable, as
+second and following arguments the input variables, as last argument a
+rounding mode, and have a return value of type <code>int</code>, called the
+<em>ternary value</em>. The value stored in the destination variable is
+correctly rounded, i.e., MPFR behaves as if it computed the result with
+an infinite precision, then rounded it to the precision of this variable.
+The input variables are regarded as exact (in particular, their precision
+does not affect the result).
+</p>
+<p>As a consequence, in case of a non-zero real rounded result, the error
+on the result is less than or equal to 1/2 ulp (unit in the last place) of
+that result in the rounding to nearest mode, and less than 1 ulp of that
+result in the directed rounding modes (a ulp is the weight of the least
+significant represented bit of the result after rounding).
+</p>
+<p>Unless documented otherwise, functions returning an <code>int</code> return
+a ternary value.
+If the ternary value is zero, it means that the value stored in the
+destination variable is the exact result of the corresponding mathematical
+function. If the ternary value is positive (resp. negative), it means
+the value stored in the destination variable is greater (resp. lower)
+than the exact result. For example with the <code>MPFR_RNDU</code> rounding mode,
+the ternary value is usually positive, except when the result is exact, in
+which case it is zero. In the case of an infinite result, it is considered
+as inexact when it was obtained by overflow, and exact otherwise. A NaN
+result (Not-a-Number) always corresponds to an exact return value.
+The opposite of a returned ternary value is guaranteed to be representable
+in an <code>int</code>.
+</p>
+<p>Unless documented otherwise, functions returning as result the value <code>1</code>
+(or any other value specified in this manual)
+for special cases (like <code>acos(0)</code>) yield an overflow or
+an underflow if that value is not representable in the current exponent range.
+</p>
+</div>
+<hr>
+<div class="header">
+<p>
+Next: <a href="Floating_002dPoint-Values-on-Special-Numbers.html">Floating-Point Values on Special Numbers</a>, Previous: <a href="MPFR-Variable-Conventions.html">MPFR Variable Conventions</a>, Up: <a href="MPFR-Basics.html">MPFR Basics</a> &nbsp; [<a href="Concept-Index.html" title="Index" rel="index">Index</a>]</p>
+</div>
+
+
+
+</body>
+</html>
