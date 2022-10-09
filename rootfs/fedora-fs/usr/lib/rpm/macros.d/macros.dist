@@ -1,0 +1,6 @@
+# dist macros.
+
+%__bootstrap         ~bootstrap
+%fedora              36
+%fc36                1
+%dist                %{!?distprefix0:%{?distprefix}}%{expand:%{lua:for i=0,9999 do print("%{?distprefix" .. i .."}") end}}.fc%{fedora}%{?with_bootstrap:~bootstrap}

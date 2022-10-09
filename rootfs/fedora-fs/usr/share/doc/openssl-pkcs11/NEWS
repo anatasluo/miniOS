@@ -1,0 +1,218 @@
+NEWS for Libp11 -- History of user visible changes
+
+New in 0.4.12; 2022-07-15; Michał Trojnara
+* Fixed using an explicitly provided PIN regardless of the secure login
+  flag (Alon Bar-Lev)
+* Fixed RSA_PKCS1_PADDING handling (Michał Trojnara)
+* Fixed a crash on LLP64, including 64-bit Windows (Małgorzata Olszówka)
+* Fixed searching objects when both ID and label are specified (minfrin)
+* Fixed the OAEP "source" parameter (S-P Chan)
+* Fixed object searching by label (Michał Trojnara)
+* Fixed thread safety in slot enumeration (Michał Trojnara)
+* Fixed storing certificates on tokens (Mateusz Kwiatkowski)
+* Fixed several memory leaks (Michał Trojnara, Jakub Jelen, Timo Teräs)
+* Fixed OpenSSL 3.0 compatibility (Jakub Jelen)
+* Fixed LibreSSL compatibility (orbea, patchMonkey156)
+* Major concurrency improvements and refactoring (Timo Teräs)
+* Added re-numeration of slots as an engine control command (Markus Koetter)
+* Added the PKCS11_update_slots() API function (Timo Teräs)
+* Added support for the SHA3 hash function (alegon01)
+* Added a self-test for engine RSA operations (Uri Blumenthal)
+
+New in 0.4.11; 2020-10-11; Michał Trojnara
+* Fixed "EVP_PKEY_derive:buffer too small" EC errors (Luka Logar)
+* Fixed various memory leaks (Mateusz Kwiatkowski)
+* Fixed Windows VERSIONINFO (Pavol Misik)
+* Fixed builds with OpenSSL older than 1.0.2 (Michał Trojnara)
+* Fixed a double free in EVP_PKEY_meth_free() (Mikhail Durnev)
+* Added CKA_VALUE_LEN to EC key derivation template (Michał Trojnara)
+* Fixed handling keys without label attribute (efternavn)
+* Updated the tests (Anderson Toshiyuki Sasaki)
+* Made ECDH-derived keys extractable (Bent Bisballe Nyeng)
+* Added support for pin-source within PKCS#11 URI (Stanislav Levin)
+* Improved LibreSSL compatibility (patchMonkey156)
+* Fixed handling RSA private keys in BIND (Stanislav Levin)
+* Added macOS testing support (Stanislav Levin)
+* Fixed engine object search algorithm (Anderson Toshiyuki Sasaki)
+
+New in 0.4.10; 2019-04-03; Michał Trojnara
+* Added EC signing through EVP API (Bryan Hunt)
+* Added an empty EC private key required by OpenSSL 1.1.1 (Doug Engert)
+* Stored additional certificate attributes (FdLSifu, Michał Trojnara)
+* Engine allowed to use private keys without a PIN (Michał Trojnara)
+* Lazy binding used as a workaround for buggy modules (Michał Trojnara)
+* MinGW build fixes and documentation (Michał Trojnara)
+* LibreSSL 2.8.3 build fixes (patchMonkey156)
+* Error handling fixes (Michał Trojnara)
+
+New in 0.4.9; 2018-09-03; Michał Trojnara
+* Fixed EVP_PKEY ENGINE reference count with the EC EVP_PKEY_METHOD
+  (Michał Trojnara, Anderson Sasaki)
+* Fixed a leak of RSA object in pkcs11_store_key() (lbonn)
+* Added atfork checks for RSA and EC_KEY methods (Michał Trojnara)
+
+New in 0.4.8; 2018-08-05; Michał Trojnara
+* RSA key generation on the token (n3wtron)
+* PSS signature support (Doug Engert, Michał Trojnara)
+* RSA-OAEP and RSA-PKCS encryption support (Mouse, Michał Trojnara)
+* Engine no longer set as default for all methods (Anderson Sasaki)
+* Added PKCS11_remove_key and PKCS11_remove_certificate (n3wtron)
+* Added PKCS11_find_next_token interface (Frank Morgner)
+* Added support for OpenSSL 1.1.1 beta (Michał Trojnara)
+* Removed support for OpenSSL 0.9.8 (Michał Trojnara)
+* Case insensitive PKCS#11 URI scheme (Anderson Sasaki)
+* Testing framework improvements (Anderson Sasaki)
+* Coverity scanning and defect fixes (Frank Morgner)
+* Backward compatibility for new error handling introduced
+  in libp11 0.4.7 (Michał Trojnara)
+* Memory leak fixes (Frank Morgner, Doug Engert)
+* Added an integer overflow protection (Eric Sesterhenn, Michał Trojnara)
+* Several bugfixes (Michał Trojnara, Emmanuel Deloget, Anderson Sasaki)
+
+New in 0.4.7; 2017-07-03; Michał Trojnara
+* Added OpenSSL-style engine error reporting (Michał Trojnara)
+* Added the FORCE_LOGIN engine ctrl command (Michał Trojnara)
+* Implemented the QUIET engine ctrl command (Michał Trojnara)
+* Modified CKU_CONTEXT_SPECIFIC PIN requests to be based
+  on the CKA_ALWAYS_AUTHENTICATE attribute rather than the
+  CKR_USER_NOT_LOGGED_IN error (Michał Trojnara)
+* Fixed printing hex values (Michał Trojnara)
+* Fixed build error with OPENSSL_NO_EC (Kai Kang)
+
+New in 0.4.6; 2017-04-23; Michał Trojnara
+* Updated ex_data on EVP_PKEYs after enumerating keys (Matt Hauck)
+* Token/key labels added into PIN prompts (Matt Hauck)
+
+New in 0.4.5; 2017-03-29; Michał Trojnara
+* Prevented destroying existing keys/certs at login (Michał Trojnara)
+* Fixed synchronization of PKCS#11 module calls (Matt Hauck)
+* Added LibreSSL compatibility (Bernard Spil)
+* Added SET_USER_INTERFACE and SET_CALLBACK_DATA engine ctrl commands
+  for certificate and CKU_CONTEXT_SPECIFIC PINs (Michał Trojnara)
+* Fixed error handling in RSA key generation (Michał Trojnara)
+
+New in 0.4.4; 2017-01-26; Michał Trojnara
+* Fixed a state reset caused by re-login on LOAD_CERT_CTRL engine ctrl;
+  fixes #141 (Michał Trojnara)
+* "?" and "&" allowed as URI separators; fixes #142 (Michał Trojnara)
+* engine: Unified private/public key and certificate enumeration
+  to be performed without login if possible (Michał Trojnara)
+
+New in 0.4.3; 2016-12-04; Michał Trojnara
+* Use UI to get CKU_CONTEXT_SPECIFIC PINs (Michał Trojnara)
+* Added graceful handling of alien (non-PKCS#11) keys (Michał Trojnara)
+* Added symbol versioning (Nikos Mavrogiannopoulos)
+* Soname tied with with the OpenSSL soname (Nikos Mavrogiannopoulos)
+* Added MSYS2, Cygwin, and MinGW/MSYS support (Paweł Witas)
+* Workaround implemented for a deadlock in PKCS#11 modules that
+  internally use OpenSSL engines (Michał Trojnara, Paweł Witas)
+* Fixed an EVP_PKEY reference count leak (David Woodhouse)
+* Fixed OpenSSL 1.1.x crash in public RSA methods (Doug Engert,
+  Michał Trojnara)
+* Fixed OpenSSL 1.1.x builds (Nikos Mavrogiannopoulos, Michał Trojnara)
+* Fixed retrieving PIN values from certificate URIs (Andrei Korikov)
+* Fixed symlink installation (Alon Bar-Lev)
+
+New in 0.4.2; 2016-09-25; Michał Trojnara
+* Fixed a 0.4.0 regression bug causing the engine finish function to
+  remove any configured engine parameters; fixes #104 (Michał Trojnara)
+
+New in 0.4.1; 2016-09-17; Michał Trojnara
+* Use enginesdir provided by libcrypto.pc if available (David Woodhouse)
+* Certificate cache destroyed on login/logout (David Woodhouse)
+* Fixed accessing certificates marked as CKA_PRIVATE (David Woodhouse)
+* Directly included libp11 code into the engine (Matt Hauck)
+* Fixed handling simultaneous make jobs (Derek Straka)
+* Reverted an old hack that broke engine initialization (Michał Trojnara)
+* Fixed loading of multiple keys due to unneeded re-logging (Matt Hauck)
+* Makefile fixes and improvements (Nikos Mavrogiannopoulos)
+* Fixed several certificate selection bugs (Michał Trojnara)
+* The signed message digest is truncated if it is too long for the
+  signing curve (David von Oheimb)
+* Workaround for broken PKCS#11 modules not returning CKA_EC_POINT
+  in the ASN1_OCTET_STRING format (Michał Trojnara)
+* OpenSSL 1.1.0 build fixes (Michał Trojnara)
+
+New in 0.4.0; 2016-03-28; Michał Trojnara
+* Merged engine_pkcs11 (Michał Trojnara)
+* Added ECDSA support for OpenSSL < 1.0.2 (Michał Trojnara)
+* Added ECDH key derivation support (Doug Engert and Michał Trojnara)
+* Added support for RSA_NO_PADDING RSA private key decryption, used
+  by OpenSSL for various features including OAEP (Michał Trojnara)
+* Added support for the ANSI X9.31 (RSA_X931_PADDING) RSA padding
+  (Michał Trojnara)
+* Added support for RSA encryption (not only signing) (Michał Trojnara)
+* Added CKA_ALWAYS_AUTHENTICATE support (Michał Trojnara)
+* Fixed double locking the global engine lock (Michał Trojnara)
+* Fixed incorrect errors reported on signing/encryption/decryption
+  (Michał Trojnara)
+* Fixed deadlocks in keys and certificates listing (Brian Hinz)
+* Use PKCS11_MODULE_PATH environment variable (Doug Engert)
+* Added support for building against OpenSSL 1.1.0-dev (Doug Engert)
+* Returned EVP_PKEY objects are no longer "const" (Michał Trojnara)
+* Fixed building against OpenSSL 0.9.8 (Michał Trojnara)
+* Removed support for OpenSSL 0.9.7 (Michał Trojnara)
+
+New in 0.3.1; 2016-01-22; Michał Trojnara
+* Added PKCS11_is_logged_in to the API (Mikhail Denisenko)
+* Added PKCS11_enumerate_public_keys to the API (Michał Trojnara)
+* Fixed EVP_PKEY handling of public keys (Michał Trojnara)
+* Added thread safety based on OpenSSL dynamic locks (Michał Trojnara)
+* A private index is allocated for ex_data access (RSA and ECDSA classes)
+  instead of using the reserved index zero (app_data) (Michał Trojnara)
+* Fixes in reinitialization after fork; addresses #39
+  (Michał Trojnara)
+* Improved searching for dlopen() (Christoph Moench-Tegeder)
+* MSVC build fixes (Michał Trojnara)
+* Fixed memory leaks in pkcs11_get_evp_key_rsa() (Michał Trojnara)
+
+New in 0.3.0; 2015-10-09; Nikos Mavrogiannopoulos
+* Added small test suite based on softhsm (run on make check)
+* Memory leak fixes (Christian Heimes)
+* On module initialization tell the module to that the OS locking
+  primitives are OK to use (Mike Gerow)
+* Transparently handle applications that fork. That is call C_Initialize()
+  and reopen any handles if a fork is detected.
+* Eliminated any hard coded limits for certificate size (Doug Engert)
+* Added support for ECDSA (Doug Engert)
+* Allow RSA_NO_PADDING padding mode in PKCS11_private_encrypt
+  (Stephane Adenot)
+* Eliminated several hard-coded limits in parameter sizes.
+
+New in 0.2.8; 2011-04-15; Martin Paljak
+* Bumped soname for PKCS11_token struct size changes (Martin Paljak).
+* Display the number of available slots (Ludovic Rousseau).
+* Add openssl libcrypto to pkg-config private libs list (Kalev Lember).
+* Fix building examples with --no-add-needed which is the default in Fedora
+  (Kalev Lember).
+* Expose more token flags in PKCS11_token structure (Kalev Lember).
+* Check that private data is not NULL in pkcs11_release_slot (Robin Bryce,
+  ticket #137).
+
+New in 0.2.7; 2009-10-20; Andreas Jellinghaus
+* If CKR_CRYPTOKI_ALREADY_INITIALIZED is returned from C_Initialize(): ignore. 
+  (Needed for unloaded/reloaded engines e.g. in wpa_supplicant.) By David Smith.
+
+New in 0.2.6; 2009-07-22; Andreas Jellinghaus
+* Fix new version: add new symbol to export file
+* fix building on MSVC platform
+
+New in 0.2.5; 2009-06-15; Andreas Jellinghaus
+* Add function to export the slot id (Douglas E. Engert).
+* Increase library version because of the new function.
+
+New in 0.2.4; 2008-07-31; Andreas Jellinghaus
+* Build system rewritten (NOTICE: configure options was modified). 
+  The build system can produce outputs for *NIX, cygwin and native
+  windows (using mingw).
+* added PKCS11_CTX_init_args (David Smith).
+* fix segfault in init_args code.
+* implemented PKCS11_private_encrypt (with PKCS11_sign now based on it)
+  (Arnaud Ebalard)
+
+New in 0.2.3; 2007-07-11; Andreas Jellinghaus
+* update wiki export script (add images, fix links).
+* replaced rsa header files from rsalabs (official) with scute (open source).
+* allow CKR_USER_ALREADY_LOGGED_IN on C_Login.
+* mark internal functions as static.
+* add code to store public keys and generate keys.

@@ -1,0 +1,941 @@
+2022-10-09T05:25:42+0000 INFO --- logging initialized ---
+2022-10-09T05:25:42+0000 DDEBUG timer: config: 2 ms
+2022-10-09T05:25:42+0000 DEBUG Loaded plugins: builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, needs-restarting, playground, repoclosure, repodiff, repograph, repomanage, reposync
+2022-10-09T05:25:42+0000 DEBUG DNF version: 4.13.0
+2022-10-09T05:25:42+0000 DDEBUG Command: dnf --installroot=/home/anatasluo/miniOS/rootfs/fedora-fs --releasever=36 install system-release vim-minimal systemd passwd dnf rootfiles 
+2022-10-09T05:25:42+0000 DDEBUG Installroot: /home/anatasluo/miniOS/rootfs/fedora-fs
+2022-10-09T05:25:42+0000 DDEBUG Releasever: 36
+2022-10-09T05:25:42+0000 DEBUG cachedir: /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf
+2022-10-09T05:25:42+0000 DDEBUG Base command: install
+2022-10-09T05:25:42+0000 DDEBUG Extra commands: ['--installroot=/home/anatasluo/miniOS/rootfs/fedora-fs', '--releasever=36', 'install', 'system-release', 'vim-minimal', 'systemd', 'passwd', 'dnf', 'rootfiles']
+2022-10-09T05:25:42+0000 DEBUG User-Agent: constructed: 'libdnf (Fedora Linux 36; server; Linux.x86_64)'
+2022-10-09T05:25:42+0000 DEBUG repo: downloading from remote: fedora
+2022-10-09T05:25:42+0000 DEBUG countme: event triggered for fedora: bucket 1
+2022-10-09T05:26:06+0000 DEBUG fedora: using metadata from Wed 04 May 2022 09:16:11 PM UTC.
+2022-10-09T05:26:06+0000 DEBUG repo: downloading from remote: fedora-cisco-openh264
+2022-10-09T05:26:07+0000 DEBUG fedora-cisco-openh264: using metadata from Fri 26 Aug 2022 07:01:49 AM UTC.
+2022-10-09T05:26:07+0000 DEBUG repo: downloading from remote: fedora-modular
+2022-10-09T05:26:07+0000 DEBUG countme: event triggered for fedora-modular: bucket 1
+2022-10-09T05:26:10+0000 DEBUG fedora-modular: using metadata from Wed 04 May 2022 09:12:01 PM UTC.
+2022-10-09T05:26:10+0000 DEBUG repo: downloading from remote: updates
+2022-10-09T05:26:10+0000 DEBUG countme: no event for updates: budget to spend: 3
+2022-10-09T05:26:22+0000 DEBUG updates: using metadata from Sat 08 Oct 2022 05:28:47 PM UTC.
+2022-10-09T05:26:22+0000 DEBUG repo: downloading from remote: updates-modular
+2022-10-09T05:26:22+0000 DEBUG countme: no event for updates-modular: budget to spend: 2
+2022-10-09T05:26:26+0000 DEBUG updates-modular: using metadata from Wed 21 Sep 2022 01:45:49 AM UTC.
+2022-10-09T05:26:26+0000 DEBUG repo: downloading from remote: apprepo
+2022-10-09T05:26:27+0000 DEBUG apprepo: using metadata from Sat 06 Aug 2022 02:41:58 AM UTC.
+2022-10-09T05:26:30+0000 DDEBUG timer: sack setup: 48525 ms
+2022-10-09T05:26:30+0000 DEBUG Completion plugin: Generating completion cache...
+2022-10-09T05:26:31+0000 DEBUG --> Starting dependency resolution
+2022-10-09T05:26:31+0000 DEBUG ---> Package alternatives.x86_64 1.19-2.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package basesystem.noarch 11-13.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package bzip2-libs.x86_64 1.0.8-11.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package cpio.x86_64 2.13-12.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package cracklib.x86_64 2.9.6-28.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package cracklib-dicts.x86_64 2.9.6-28.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package cryptsetup-libs.x86_64 2.4.3-2.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package cyrus-sasl-lib.x86_64 2.1.27-18.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package dbus.x86_64 1:1.14.0-1.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package dbus-common.noarch 1:1.14.0-1.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package dbus-libs.x86_64 1:1.14.0-1.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package deltarpm.x86_64 3.6.2-11.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package device-mapper.x86_64 1.02.175-7.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package device-mapper-libs.x86_64 1.02.175-7.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package diffutils.x86_64 3.8-2.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package file.x86_64 5.41-4.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package file-libs.x86_64 5.41-4.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package findutils.x86_64 1:4.9.0-1.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package fuse-libs.x86_64 2.9.9-14.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package gawk.x86_64 5.1.1-2.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package gawk-all-langpacks.x86_64 5.1.1-2.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package gdbm-libs.x86_64 1:1.22-2.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package gettext.x86_64 0.21-9.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package gettext-libs.x86_64 0.21-9.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package gmp.x86_64 1:6.2.1-2.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package grep.x86_64 3.7-2.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package gzip.x86_64 1.11-3.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package ima-evm-utils.x86_64 1.4-5.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package json-c.x86_64 0.15-3.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package kbd.x86_64 2.4.0-9.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package kbd-misc.noarch 2.4.0-9.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package keyutils-libs.x86_64 1.6.1-4.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package kmod.x86_64 29-7.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package kmod-libs.x86_64 29-7.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package kpartx.x86_64 0.8.7-8.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package libacl.x86_64 2.3.1-3.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package libassuan.x86_64 2.5.5-4.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package libattr.x86_64 2.5.1-4.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package libbrotli.x86_64 1.0.9-7.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package libcap.x86_64 2.48-4.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package libcbor.x86_64 0.7.0-5.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package libcom_err.x86_64 1.46.5-2.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package libcomps.x86_64 0.1.18-2.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package libdb.x86_64 5.3.28-51.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package libeconf.x86_64 0.4.0-3.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package libevent.x86_64 2.1.12-6.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package libffi.x86_64 3.4.2-8.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package libfido2.x86_64 1.10.0-3.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package libfsverity.x86_64 1.4-7.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package libksba.x86_64 1.6.0-3.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package libmodulemd.x86_64 2.14.0-2.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package libnghttp2.x86_64 1.46.0-2.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package libnsl2.x86_64 2.0.0-3.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package libpsl.x86_64 0.21.1-5.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package libpwquality.x86_64 1.4.4-7.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package libseccomp.x86_64 2.5.3-2.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package libsecret.x86_64 0.20.5-1.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package libselinux.x86_64 3.3-4.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package libsemanage.x86_64 3.3-3.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package libsepol.x86_64 3.3-3.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package libsigsegv.x86_64 2.14-2.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package libssh.x86_64 0.9.6-4.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package libssh-config.noarch 0.9.6-4.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package libtasn1.x86_64 4.18.0-2.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package libunistring.x86_64 1.0-1.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package libusb1.x86_64 1.0.25-8.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package libuser.x86_64 0.63-10.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package libutempter.x86_64 1.2.1-6.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package libverto.x86_64 0.3.2-3.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package libxcrypt.x86_64 4.4.28-1.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package libxcrypt-compat.x86_64 4.4.28-1.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package libxkbcommon.x86_64 1.4.0-1.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package libyaml.x86_64 0.2.5-7.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package lz4-libs.x86_64 1.9.3-4.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package memstrack.x86_64 0.2.4-2.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package mpdecimal.x86_64 2.5.1-3.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package mpfr.x86_64 4.1.0-9.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package ncurses-base.noarch 6.2-9.20210508.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package ncurses-libs.x86_64 6.2-9.20210508.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package npth.x86_64 1.6-8.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package os-prober.x86_64 1.77-9.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package p11-kit.x86_64 0.24.1-2.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package p11-kit-trust.x86_64 0.24.1-2.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package passwd.x86_64 0.80-12.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package pcre.x86_64 8.45-1.fc36.1 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package pcsc-lite-ccid.x86_64 1.5.0-1.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package pinentry.x86_64 1.2.0-2.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package polkit.x86_64 0.120-5.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package polkit-libs.x86_64 0.120-5.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package polkit-pkla-compat.x86_64 0.1-21.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package popt.x86_64 1.18-7.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package procps-ng.x86_64 3.3.17-4.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package publicsuffix-list-dafsa.noarch 20210518-4.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package python-setuptools-wheel.noarch 59.6.0-2.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package python3-libcomps.x86_64 0.1.18-2.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package qrencode-libs.x86_64 4.1.1-2.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package readline.x86_64 8.1-6.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package rootfiles.noarch 8.1-31.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package sed.x86_64 4.8-10.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package sqlite-libs.x86_64 3.36.0-5.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package tpm2-tools.x86_64 5.2-2.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package xkeyboard-config.noarch 2.35.1-1.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package xz.x86_64 5.2.5-9.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package xz-libs.x86_64 5.2.5-9.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package audit-libs.x86_64 3.0.9-1.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package authselect.x86_64 1.4.0-1.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package authselect-libs.x86_64 1.4.0-1.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package bash.x86_64 5.1.16-3.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package ca-certificates.noarch 2022.2.54-1.2.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package coreutils.x86_64 9.0-8.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package coreutils-common.x86_64 9.0-8.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package crypto-policies.noarch 20220428-1.gitdfb10ea.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package crypto-policies-scripts.noarch 20220428-1.gitdfb10ea.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package curl.x86_64 7.82.0-8.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package dbus-broker.x86_64 32-1.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package dnf.noarch 4.14.0-1.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package dnf-data.noarch 4.14.0-1.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package dracut.x86_64 057-3.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package elfutils-debuginfod-client.x86_64 0.187-4.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package elfutils-default-yama-scope.noarch 0.187-4.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package elfutils-libelf.x86_64 0.187-4.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package elfutils-libs.x86_64 0.187-4.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package expat.x86_64 2.4.9-1.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package fedora-gpg-keys.noarch 36-4 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package fedora-release.noarch 36-18 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package fedora-release-common.noarch 36-18 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package fedora-release-identity-basic.noarch 36-18 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package fedora-repos.noarch 36-4 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package filesystem.x86_64 3.18-2.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package glib2.x86_64 2.72.3-1.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package glibc.x86_64 2.35-17.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package glibc-common.x86_64 2.35-17.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package glibc-gconv-extra.x86_64 2.35-17.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package glibc-minimal-langpack.x86_64 2.35-17.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package gnupg2.x86_64 2.3.7-3.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package gnupg2-smime.x86_64 2.3.7-3.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package gnutls.x86_64 3.7.7-1.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package gpgme.x86_64 1.17.0-4.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package grub2-common.noarch 1:2.06-53.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package grub2-tools.x86_64 1:2.06-53.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package grub2-tools-minimal.x86_64 1:2.06-53.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package grubby.x86_64 8.40-67.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package krb5-libs.x86_64 1.19.2-11.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package libarchive.x86_64 3.5.3-3.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package libargon2.x86_64 20171227-9.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package libblkid.x86_64 2.38-1.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package libbpf.x86_64 2:0.7.0-3.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package libcap-ng.x86_64 0.8.3-1.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package libcurl.x86_64 7.82.0-8.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package libdnf.x86_64 0.68.0-1.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package libfdisk.x86_64 2.38-1.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package libgcc.x86_64 12.2.1-2.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package libgcrypt.x86_64 1.10.1-3.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package libgomp.x86_64 12.2.1-2.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package libgpg-error.x86_64 1.45-1.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package libicu.x86_64 69.1-6.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package libidn2.x86_64 2.3.3-1.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package libkcapi.x86_64 1.4.0-2.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package libkcapi-hmaccalc.x86_64 1.4.0-2.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package libmount.x86_64 2.38-1.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package librepo.x86_64 1.14.4-1.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package libreport-filesystem.noarch 2.17.4-1.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package libsmartcols.x86_64 2.38-1.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package libsolv.x86_64 0.7.22-1.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package libstdc++.x86_64 12.2.1-2.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package libtirpc.x86_64 1.3.3-0.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package libuuid.x86_64 2.38-1.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package libxml2.x86_64 2.9.14-1.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package libzstd.x86_64 1.5.2-2.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package lua-libs.x86_64 5.4.4-3.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package mkpasswd.x86_64 5.5.13-1.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package mozjs91.x86_64 91.13.0-1.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package nettle.x86_64 3.8-1.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package openldap.x86_64 2.6.3-1.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package openssl-libs.x86_64 1:3.0.5-1.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package openssl-pkcs11.x86_64 0.4.12-2.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package pam.x86_64 1.5.2-13.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package pam-libs.x86_64 1.5.2-13.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package pcre2.x86_64 10.40-1.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package pcre2-syntax.noarch 10.40-1.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package pcsc-lite.x86_64 1.9.8-1.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package pcsc-lite-libs.x86_64 1.9.8-1.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package pigz.x86_64 2.7-1.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package protobuf-c.x86_64 1.4.1-2.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package python-pip-wheel.noarch 21.3.1-3.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package python-unversioned-command.noarch 3.10.7-1.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package python3.x86_64 3.10.7-1.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package python3-dnf.noarch 4.14.0-1.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package python3-gpg.x86_64 1.17.0-4.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package python3-hawkey.x86_64 0.68.0-1.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package python3-libdnf.x86_64 0.68.0-1.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package python3-libs.x86_64 3.10.7-1.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package python3-rpm.x86_64 4.17.1-3.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package python3-unbound.x86_64 1.16.3-1.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package rpm.x86_64 4.17.1-3.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package rpm-build-libs.x86_64 4.17.1-3.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package rpm-libs.x86_64 4.17.1-3.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package rpm-plugin-systemd-inhibit.x86_64 4.17.1-3.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package rpm-sign-libs.x86_64 4.17.1-3.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package setup.noarch 2.14.1-1.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package shadow-utils.x86_64 2:4.11.1-4.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package systemd.x86_64 250.8-1.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package systemd-libs.x86_64 250.8-1.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package systemd-networkd.x86_64 250.8-1.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package systemd-pam.x86_64 250.8-1.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package systemd-resolved.x86_64 250.8-1.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package systemd-udev.x86_64 250.8-1.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package tpm2-tss.x86_64 3.2.0-3.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package tzdata.noarch 2022d-1.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package unbound-anchor.x86_64 1.16.3-1.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package unbound-libs.x86_64 1.16.3-1.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package util-linux.x86_64 2.38-1.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package util-linux-core.x86_64 2.38-1.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package vim-data.noarch 2:9.0.475-1.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package vim-minimal.x86_64 2:9.0.475-1.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package whois-nls.noarch 5.5.13-1.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package zchunk-libs.x86_64 1.2.3-1.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG ---> Package zlib.x86_64 1.2.11-33.fc36 will be installed
+2022-10-09T05:26:31+0000 DEBUG --> Finished dependency resolution
+2022-10-09T05:26:31+0000 DDEBUG timer: depsolve: 48 ms
+2022-10-09T05:26:31+0000 INFO Dependencies resolved.
+2022-10-09T05:26:31+0000 INFO ==================================================================================================
+ Package                           Arch       Version                           Repository   Size
+==================================================================================================
+Installing:
+ [1m[32mdnf                              (B[m noarch     4.14.0-1.fc36                     updates     471 k
+ [1m[32mfedora-release                   (B[m noarch     36-18                             updates      11 k
+ [1m[32mpasswd                           (B[m x86_64     0.80-12.fc36                      fedora      107 k
+ [1m[32mrootfiles                        (B[m noarch     8.1-31.fc36                       fedora      8.6 k
+ [1m[32msystemd                          (B[m x86_64     250.8-1.fc36                      updates     4.2 M
+ [1m[32mvim-minimal                      (B[m x86_64     2:9.0.475-1.fc36                  updates     770 k
+Installing dependencies:
+ [1m[32malternatives                     (B[m x86_64     1.19-2.fc36                       fedora       36 k
+ [1m[32maudit-libs                       (B[m x86_64     3.0.9-1.fc36                      updates     116 k
+ [1m[32mauthselect                       (B[m x86_64     1.4.0-1.fc36                      updates     139 k
+ [1m[32mauthselect-libs                  (B[m x86_64     1.4.0-1.fc36                      updates     234 k
+ [1m[32mbasesystem                       (B[m noarch     11-13.fc36                        fedora      7.0 k
+ [1m[32mbash                             (B[m x86_64     5.1.16-3.fc36                     updates     1.7 M
+ [1m[32mbzip2-libs                       (B[m x86_64     1.0.8-11.fc36                     fedora       41 k
+ [1m[32mca-certificates                  (B[m noarch     2022.2.54-1.2.fc36                updates     828 k
+ [1m[32mcoreutils                        (B[m x86_64     9.0-8.fc36                        updates     1.1 M
+ [1m[32mcoreutils-common                 (B[m x86_64     9.0-8.fc36                        updates     2.0 M
+ [1m[32mcpio                             (B[m x86_64     2.13-12.fc36                      fedora      270 k
+ [1m[32mcracklib                         (B[m x86_64     2.9.6-28.fc36                     fedora       81 k
+ [1m[32mcracklib-dicts                   (B[m x86_64     2.9.6-28.fc36                     fedora      3.6 M
+ [1m[32mcrypto-policies                  (B[m noarch     20220428-1.gitdfb10ea.fc36        updates      62 k
+ [1m[32mcurl                             (B[m x86_64     7.82.0-8.fc36                     updates     308 k
+ [1m[32mcyrus-sasl-lib                   (B[m x86_64     2.1.27-18.fc36                    fedora      794 k
+ [1m[32mdbus                             (B[m x86_64     1:1.14.0-1.fc36                   fedora      7.5 k
+ [1m[32mdbus-broker                      (B[m x86_64     32-1.fc36                         updates     175 k
+ [1m[32mdbus-common                      (B[m noarch     1:1.14.0-1.fc36                   fedora       14 k
+ [1m[32mdbus-libs                        (B[m x86_64     1:1.14.0-1.fc36                   fedora      155 k
+ [1m[32mdevice-mapper                    (B[m x86_64     1.02.175-7.fc36                   fedora      139 k
+ [1m[32mdevice-mapper-libs               (B[m x86_64     1.02.175-7.fc36                   fedora      177 k
+ [1m[32mdnf-data                         (B[m noarch     4.14.0-1.fc36                     updates      42 k
+ [1m[32mdracut                           (B[m x86_64     057-3.fc36                        updates     369 k
+ [1m[32melfutils-default-yama-scope      (B[m noarch     0.187-4.fc36                      updates      17 k
+ [1m[32melfutils-libelf                  (B[m x86_64     0.187-4.fc36                      updates     198 k
+ [1m[32melfutils-libs                    (B[m x86_64     0.187-4.fc36                      updates     257 k
+ [1m[32mexpat                            (B[m x86_64     2.4.9-1.fc36                      updates     110 k
+ [1m[32mfedora-gpg-keys                  (B[m noarch     36-4                              updates     115 k
+ [1m[32mfedora-release-common            (B[m noarch     36-18                             updates      21 k
+ [1m[32mfedora-release-identity-basic    (B[m noarch     36-18                             updates      12 k
+ [1m[32mfedora-repos                     (B[m noarch     36-4                              updates      10 k
+ [1m[32mfile                             (B[m x86_64     5.41-4.fc36                       fedora       48 k
+ [1m[32mfile-libs                        (B[m x86_64     5.41-4.fc36                       fedora      634 k
+ [1m[32mfilesystem                       (B[m x86_64     3.18-2.fc36                       updates     1.1 M
+ [1m[32mfindutils                        (B[m x86_64     1:4.9.0-1.fc36                    fedora      483 k
+ [1m[32mfuse-libs                        (B[m x86_64     2.9.9-14.fc36                     fedora       97 k
+ [1m[32mgawk                             (B[m x86_64     5.1.1-2.fc36                      fedora      1.0 M
+ [1m[32mgdbm-libs                        (B[m x86_64     1:1.22-2.fc36                     fedora       58 k
+ [1m[32mgettext                          (B[m x86_64     0.21-9.fc36                       fedora      1.1 M
+ [1m[32mgettext-libs                     (B[m x86_64     0.21-9.fc36                       fedora      303 k
+ [1m[32mglib2                            (B[m x86_64     2.72.3-1.fc36                     updates     2.7 M
+ [1m[32mglibc                            (B[m x86_64     2.35-17.fc36                      updates     2.1 M
+ [1m[32mglibc-common                     (B[m x86_64     2.35-17.fc36                      updates     333 k
+ [1m[32mglibc-minimal-langpack           (B[m x86_64     2.35-17.fc36                      updates      56 k
+ [1m[32mgmp                              (B[m x86_64     1:6.2.1-2.fc36                    fedora      315 k
+ [1m[32mgnupg2                           (B[m x86_64     2.3.7-3.fc36                      updates     2.5 M
+ [1m[32mgnutls                           (B[m x86_64     3.7.7-1.fc36                      updates     1.1 M
+ [1m[32mgpgme                            (B[m x86_64     1.17.0-4.fc36                     updates     210 k
+ [1m[32mgrep                             (B[m x86_64     3.7-2.fc36                        fedora      263 k
+ [1m[32mgrub2-common                     (B[m noarch     1:2.06-53.fc36                    updates     906 k
+ [1m[32mgrub2-tools                      (B[m x86_64     1:2.06-53.fc36                    updates     1.8 M
+ [1m[32mgrub2-tools-minimal              (B[m x86_64     1:2.06-53.fc36                    updates     605 k
+ [1m[32mgzip                             (B[m x86_64     1.11-3.fc36                       fedora      156 k
+ [1m[32mima-evm-utils                    (B[m x86_64     1.4-5.fc36                        fedora       63 k
+ [1m[32mjson-c                           (B[m x86_64     0.15-3.fc36                       fedora       43 k
+ [1m[32mkbd                              (B[m x86_64     2.4.0-9.fc36                      fedora      381 k
+ [1m[32mkbd-misc                         (B[m noarch     2.4.0-9.fc36                      fedora      1.5 M
+ [1m[32mkeyutils-libs                    (B[m x86_64     1.6.1-4.fc36                      fedora       31 k
+ [1m[32mkmod                             (B[m x86_64     29-7.fc36                         fedora      118 k
+ [1m[32mkmod-libs                        (B[m x86_64     29-7.fc36                         fedora       68 k
+ [1m[32mkrb5-libs                        (B[m x86_64     1.19.2-11.fc36                    updates     723 k
+ [1m[32mlibacl                           (B[m x86_64     2.3.1-3.fc36                      fedora       24 k
+ [1m[32mlibarchive                       (B[m x86_64     3.5.3-3.fc36                      updates     393 k
+ [1m[32mlibargon2                        (B[m x86_64     20171227-9.fc36                   updates      28 k
+ [1m[32mlibassuan                        (B[m x86_64     2.5.5-4.fc36                      fedora       67 k
+ [1m[32mlibattr                          (B[m x86_64     2.5.1-4.fc36                      fedora       18 k
+ [1m[32mlibblkid                         (B[m x86_64     2.38-1.fc36                       updates     106 k
+ [1m[32mlibbrotli                        (B[m x86_64     1.0.9-7.fc36                      fedora      316 k
+ [1m[32mlibcap                           (B[m x86_64     2.48-4.fc36                       fedora       67 k
+ [1m[32mlibcap-ng                        (B[m x86_64     0.8.3-1.fc36                      updates      33 k
+ [1m[32mlibcbor                          (B[m x86_64     0.7.0-5.fc36                      fedora       56 k
+ [1m[32mlibcom_err                       (B[m x86_64     1.46.5-2.fc36                     fedora       25 k
+ [1m[32mlibcomps                         (B[m x86_64     0.1.18-2.fc36                     fedora       77 k
+ [1m[32mlibcurl                          (B[m x86_64     7.82.0-8.fc36                     updates     301 k
+ [1m[32mlibdb                            (B[m x86_64     5.3.28-51.fc36                    fedora      766 k
+ [1m[32mlibdnf                           (B[m x86_64     0.68.0-1.fc36                     updates     663 k
+ [1m[32mlibeconf                         (B[m x86_64     0.4.0-3.fc36                      fedora       27 k
+ [1m[32mlibevent                         (B[m x86_64     2.1.12-6.fc36                     fedora      261 k
+ [1m[32mlibfdisk                         (B[m x86_64     2.38-1.fc36                       updates     160 k
+ [1m[32mlibffi                           (B[m x86_64     3.4.2-8.fc36                      fedora       37 k
+ [1m[32mlibfsverity                      (B[m x86_64     1.4-7.fc36                        fedora       19 k
+ [1m[32mlibgcc                           (B[m x86_64     12.2.1-2.fc36                     updates     106 k
+ [1m[32mlibgcrypt                        (B[m x86_64     1.10.1-3.fc36                     updates     511 k
+ [1m[32mlibgomp                          (B[m x86_64     12.2.1-2.fc36                     updates     293 k
+ [1m[32mlibgpg-error                     (B[m x86_64     1.45-1.fc36                       updates     221 k
+ [1m[32mlibicu                           (B[m x86_64     69.1-6.fc36                       updates     9.8 M
+ [1m[32mlibidn2                          (B[m x86_64     2.3.3-1.fc36                      updates     107 k
+ [1m[32mlibkcapi                         (B[m x86_64     1.4.0-2.fc36                      updates      46 k
+ [1m[32mlibkcapi-hmaccalc                (B[m x86_64     1.4.0-2.fc36                      updates      24 k
+ [1m[32mlibksba                          (B[m x86_64     1.6.0-3.fc36                      fedora      157 k
+ [1m[32mlibmodulemd                      (B[m x86_64     2.14.0-2.fc36                     fedora      234 k
+ [1m[32mlibmount                         (B[m x86_64     2.38-1.fc36                       updates     135 k
+ [1m[32mlibnghttp2                       (B[m x86_64     1.46.0-2.fc36                     fedora       71 k
+ [1m[32mlibnsl2                          (B[m x86_64     2.0.0-3.fc36                      fedora       30 k
+ [1m[32mlibpsl                           (B[m x86_64     0.21.1-5.fc36                     fedora       64 k
+ [1m[32mlibpwquality                     (B[m x86_64     1.4.4-7.fc36                      fedora      104 k
+ [1m[32mlibrepo                          (B[m x86_64     1.14.4-1.fc36                     updates      93 k
+ [1m[32mlibreport-filesystem             (B[m noarch     2.17.4-1.fc36                     updates      14 k
+ [1m[32mlibseccomp                       (B[m x86_64     2.5.3-2.fc36                      fedora       70 k
+ [1m[32mlibsecret                        (B[m x86_64     0.20.5-1.fc36                     fedora      185 k
+ [1m[32mlibselinux                       (B[m x86_64     3.3-4.fc36                        fedora       85 k
+ [1m[32mlibsemanage                      (B[m x86_64     3.3-3.fc36                        fedora      119 k
+ [1m[32mlibsepol                         (B[m x86_64     3.3-3.fc36                        fedora      309 k
+ [1m[32mlibsigsegv                       (B[m x86_64     2.14-2.fc36                       fedora       27 k
+ [1m[32mlibsmartcols                     (B[m x86_64     2.38-1.fc36                       updates      64 k
+ [1m[32mlibsolv                          (B[m x86_64     0.7.22-1.fc36                     updates     406 k
+ [1m[32mlibssh                           (B[m x86_64     0.9.6-4.fc36                      fedora      203 k
+ [1m[32mlibssh-config                    (B[m noarch     0.9.6-4.fc36                      fedora      7.6 k
+ [1m[32mlibstdc++                        (B[m x86_64     12.2.1-2.fc36                     updates     778 k
+ [1m[32mlibtasn1                         (B[m x86_64     4.18.0-2.fc36                     fedora       75 k
+ [1m[32mlibtirpc                         (B[m x86_64     1.3.3-0.fc36                      updates      93 k
+ [1m[32mlibunistring                     (B[m x86_64     1.0-1.fc36                        fedora      551 k
+ [1m[32mlibusb1                          (B[m x86_64     1.0.25-8.fc36                     fedora       74 k
+ [1m[32mlibuser                          (B[m x86_64     0.63-10.fc36                      fedora      383 k
+ [1m[32mlibutempter                      (B[m x86_64     1.2.1-6.fc36                      fedora       26 k
+ [1m[32mlibuuid                          (B[m x86_64     2.38-1.fc36                       updates      27 k
+ [1m[32mlibverto                         (B[m x86_64     0.3.2-3.fc36                      fedora       21 k
+ [1m[32mlibxcrypt                        (B[m x86_64     4.4.28-1.fc36                     fedora      119 k
+ [1m[32mlibxml2                          (B[m x86_64     2.9.14-1.fc36                     updates     752 k
+ [1m[32mlibyaml                          (B[m x86_64     0.2.5-7.fc36                      fedora       60 k
+ [1m[32mlibzstd                          (B[m x86_64     1.5.2-2.fc36                      updates     294 k
+ [1m[32mlua-libs                         (B[m x86_64     5.4.4-3.fc36                      updates     216 k
+ [1m[32mlz4-libs                         (B[m x86_64     1.9.3-4.fc36                      fedora       70 k
+ [1m[32mmozjs91                          (B[m x86_64     91.13.0-1.fc36                    updates     4.4 M
+ [1m[32mmpdecimal                        (B[m x86_64     2.5.1-3.fc36                      fedora      102 k
+ [1m[32mmpfr                             (B[m x86_64     4.1.0-9.fc36                      fedora      333 k
+ [1m[32mncurses-base                     (B[m noarch     6.2-9.20210508.fc36               fedora       60 k
+ [1m[32mncurses-libs                     (B[m x86_64     6.2-9.20210508.fc36               fedora      326 k
+ [1m[32mnettle                           (B[m x86_64     3.8-1.fc36                        updates     414 k
+ [1m[32mnpth                             (B[m x86_64     1.6-8.fc36                        fedora       24 k
+ [1m[32mopenldap                         (B[m x86_64     2.6.3-1.fc36                      updates     254 k
+ [1m[32mopenssl-libs                     (B[m x86_64     1:3.0.5-1.fc36                    updates     2.1 M
+ [1m[32mos-prober                        (B[m x86_64     1.77-9.fc36                       fedora       43 k
+ [1m[32mp11-kit                          (B[m x86_64     0.24.1-2.fc36                     fedora      362 k
+ [1m[32mp11-kit-trust                    (B[m x86_64     0.24.1-2.fc36                     fedora      138 k
+ [1m[32mpam                              (B[m x86_64     1.5.2-13.fc36                     updates     522 k
+ [1m[32mpam-libs                         (B[m x86_64     1.5.2-13.fc36                     updates      58 k
+ [1m[32mpcre                             (B[m x86_64     8.45-1.fc36.1                     fedora      203 k
+ [1m[32mpcre2                            (B[m x86_64     10.40-1.fc36                      updates     237 k
+ [1m[32mpcre2-syntax                     (B[m noarch     10.40-1.fc36                      updates     143 k
+ [1m[32mpcsc-lite                        (B[m x86_64     1.9.8-1.fc36                      updates      94 k
+ [1m[32mpcsc-lite-libs                   (B[m x86_64     1.9.8-1.fc36                      updates      28 k
+ [1m[32mpolkit                           (B[m x86_64     0.120-5.fc36                      fedora      146 k
+ [1m[32mpolkit-libs                      (B[m x86_64     0.120-5.fc36                      fedora       65 k
+ [1m[32mpolkit-pkla-compat               (B[m x86_64     0.1-21.fc36                       fedora       44 k
+ [1m[32mpopt                             (B[m x86_64     1.18-7.fc36                       fedora       59 k
+ [1m[32mprocps-ng                        (B[m x86_64     3.3.17-4.fc36                     fedora      330 k
+ [1m[32mprotobuf-c                       (B[m x86_64     1.4.1-2.fc36                      updates      39 k
+ [1m[32mpublicsuffix-list-dafsa          (B[m noarch     20210518-4.fc36                   fedora       58 k
+ [1m[32mpython-pip-wheel                 (B[m noarch     21.3.1-3.fc36                     updates     1.1 M
+ [1m[32mpython-setuptools-wheel          (B[m noarch     59.6.0-2.fc36                     fedora      507 k
+ [1m[32mpython3                          (B[m x86_64     3.10.7-1.fc36                     updates      28 k
+ [1m[32mpython3-dnf                      (B[m noarch     4.14.0-1.fc36                     updates     416 k
+ [1m[32mpython3-gpg                      (B[m x86_64     1.17.0-4.fc36                     updates     264 k
+ [1m[32mpython3-hawkey                   (B[m x86_64     0.68.0-1.fc36                     updates     105 k
+ [1m[32mpython3-libcomps                 (B[m x86_64     0.1.18-2.fc36                     fedora       48 k
+ [1m[32mpython3-libdnf                   (B[m x86_64     0.68.0-1.fc36                     updates     794 k
+ [1m[32mpython3-libs                     (B[m x86_64     3.10.7-1.fc36                     updates     7.4 M
+ [1m[32mpython3-rpm                      (B[m x86_64     4.17.1-3.fc36                     updates      90 k
+ [1m[32mreadline                         (B[m x86_64     8.1-6.fc36                        fedora      211 k
+ [1m[32mrpm                              (B[m x86_64     4.17.1-3.fc36                     updates     536 k
+ [1m[32mrpm-build-libs                   (B[m x86_64     4.17.1-3.fc36                     updates      92 k
+ [1m[32mrpm-libs                         (B[m x86_64     4.17.1-3.fc36                     updates     314 k
+ [1m[32mrpm-sign-libs                    (B[m x86_64     4.17.1-3.fc36                     updates      25 k
+ [1m[32msed                              (B[m x86_64     4.8-10.fc36                       fedora      297 k
+ [1m[32msetup                            (B[m noarch     2.14.1-1.fc36                     updates     143 k
+ [1m[32mshadow-utils                     (B[m x86_64     2:4.11.1-4.fc36                   updates     1.1 M
+ [1m[32msqlite-libs                      (B[m x86_64     3.36.0-5.fc36                     fedora      642 k
+ [1m[32msystemd-libs                     (B[m x86_64     250.8-1.fc36                      updates     614 k
+ [1m[32msystemd-pam                      (B[m x86_64     250.8-1.fc36                      updates     333 k
+ [1m[32msystemd-udev                     (B[m x86_64     250.8-1.fc36                      updates     1.9 M
+ [1m[32mtpm2-tss                         (B[m x86_64     3.2.0-3.fc36                      updates     596 k
+ [1m[32mtzdata                           (B[m noarch     2022d-1.fc36                      updates     429 k
+ [1m[32munbound-libs                     (B[m x86_64     1.16.3-1.fc36                     updates     526 k
+ [1m[32mutil-linux                       (B[m x86_64     2.38-1.fc36                       updates     2.3 M
+ [1m[32mutil-linux-core                  (B[m x86_64     2.38-1.fc36                       updates     454 k
+ [1m[32mvim-data                         (B[m noarch     2:9.0.475-1.fc36                  updates      25 k
+ [1m[32mwhois-nls                        (B[m noarch     5.5.13-1.fc36                     updates      35 k
+ [1m[32mxkeyboard-config                 (B[m noarch     2.35.1-1.fc36                     fedora      878 k
+ [1m[32mxz                               (B[m x86_64     5.2.5-9.fc36                      fedora      214 k
+ [1m[32mxz-libs                          (B[m x86_64     5.2.5-9.fc36                      fedora       92 k
+ [1m[32mzchunk-libs                      (B[m x86_64     1.2.3-1.fc36                      updates      51 k
+ [1m[32mzlib                             (B[m x86_64     1.2.11-33.fc36                    updates      90 k
+Installing weak dependencies:
+ [1m[32mcrypto-policies-scripts          (B[m noarch     20220428-1.gitdfb10ea.fc36        updates      82 k
+ [1m[32mcryptsetup-libs                  (B[m x86_64     2.4.3-2.fc36                      fedora      432 k
+ [1m[32mdeltarpm                         (B[m x86_64     3.6.2-11.fc36                     fedora       89 k
+ [1m[32mdiffutils                        (B[m x86_64     3.8-2.fc36                        fedora      370 k
+ [1m[32melfutils-debuginfod-client       (B[m x86_64     0.187-4.fc36                      updates      40 k
+ [1m[32mgawk-all-langpacks               (B[m x86_64     5.1.1-2.fc36                      fedora      232 k
+ [1m[32mglibc-gconv-extra                (B[m x86_64     2.35-17.fc36                      updates     1.6 M
+ [1m[32mgnupg2-smime                     (B[m x86_64     2.3.7-3.fc36                      updates     248 k
+ [1m[32mgrubby                           (B[m x86_64     8.40-67.fc36                      updates      34 k
+ [1m[32mkpartx                           (B[m x86_64     0.8.7-8.fc36                      fedora       49 k
+ [1m[32mlibbpf                           (B[m x86_64     2:0.7.0-3.fc36                    updates     159 k
+ [1m[32mlibfido2                         (B[m x86_64     1.10.0-3.fc36                     fedora       95 k
+ [1m[32mlibxcrypt-compat                 (B[m x86_64     4.4.28-1.fc36                     fedora       90 k
+ [1m[32mlibxkbcommon                     (B[m x86_64     1.4.0-1.fc36                      fedora      140 k
+ [1m[32mmemstrack                        (B[m x86_64     0.2.4-2.fc36                      fedora       50 k
+ [1m[32mmkpasswd                         (B[m x86_64     5.5.13-1.fc36                     updates      25 k
+ [1m[32mopenssl-pkcs11                   (B[m x86_64     0.4.12-2.fc36                     updates      73 k
+ [1m[32mpcsc-lite-ccid                   (B[m x86_64     1.5.0-1.fc36                      fedora      319 k
+ [1m[32mpigz                             (B[m x86_64     2.7-1.fc36                        updates      82 k
+ [1m[32mpinentry                         (B[m x86_64     1.2.0-2.fc36                      fedora       98 k
+ [1m[32mpython-unversioned-command       (B[m noarch     3.10.7-1.fc36                     updates      11 k
+ [1m[32mpython3-unbound                  (B[m x86_64     1.16.3-1.fc36                     updates      99 k
+ [1m[32mqrencode-libs                    (B[m x86_64     4.1.1-2.fc36                      fedora       61 k
+ [1m[32mrpm-plugin-systemd-inhibit       (B[m x86_64     4.17.1-3.fc36                     updates      18 k
+ [1m[32msystemd-networkd                 (B[m x86_64     250.8-1.fc36                      updates     617 k
+ [1m[32msystemd-resolved                 (B[m x86_64     250.8-1.fc36                      updates     275 k
+ [1m[32mtpm2-tools                       (B[m x86_64     5.2-2.fc36                        fedora      729 k
+ [1m[32munbound-anchor                   (B[m x86_64     1.16.3-1.fc36                     updates      37 k
+
+Transaction Summary
+==================================================================================================
+Install  218 Packages
+
+2022-10-09T05:26:31+0000 INFO Total download size: 98 M
+2022-10-09T05:26:31+0000 INFO Installed size: 344 M
+2022-10-09T05:26:33+0000 INFO Downloading Packages:
+2022-10-09T05:26:52+0000 INFO --------------------------------------------------------------------------------------------------
+2022-10-09T05:26:52+0000 INFO Total                                                             5.3 MB/s |  98 MB     00:18     
+2022-10-09T05:26:52+0000 DEBUG Using rpmkeys executable at /usr/bin/rpmkeys to verify signatures
+2022-10-09T05:26:52+0000 CRITICAL Importing GPG key 0x38AB71F4:
+ Userid     : "Fedora (36) <fedora-36-primary@fedoraproject.org>"
+ Fingerprint: 53DE D2CB 922D 8B8D 9E63 FD18 999F 7CBF 38AB 71F4
+ From       : /etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-36-x86_64
+2022-10-09T05:26:55+0000 INFO Key imported successfully
+2022-10-09T05:26:58+0000 INFO Running transaction check
+2022-10-09T05:26:58+0000 INFO Transaction check succeeded.
+2022-10-09T05:26:58+0000 INFO Running transaction test
+2022-10-09T05:26:58+0000 INFO Transaction test succeeded.
+2022-10-09T05:26:58+0000 DDEBUG timer: transaction test: 658 ms
+2022-10-09T05:26:58+0000 INFO Running transaction
+2022-10-09T05:26:58+0000 DEBUG RPMDB altered outside of DNF.
+2022-10-09T05:26:58+0000 DDEBUG RPM transaction start.
+2022-10-09T05:27:17+0000 DDEBUG RPM transaction over.
+2022-10-09T05:27:17+0000 DDEBUG timer: verify transaction: 155 ms
+2022-10-09T05:27:17+0000 DDEBUG timer: transaction: 18893 ms
+2022-10-09T05:27:17+0000 DEBUG Completion plugin: Generating completion cache...
+2022-10-09T05:27:17+0000 DEBUG Installed: alternatives-1.19-2.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: audit-libs-3.0.9-1.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: authselect-1.4.0-1.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: authselect-libs-1.4.0-1.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: basesystem-11-13.fc36.noarch
+2022-10-09T05:27:17+0000 DEBUG Installed: bash-5.1.16-3.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: bzip2-libs-1.0.8-11.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: ca-certificates-2022.2.54-1.2.fc36.noarch
+2022-10-09T05:27:17+0000 DEBUG Installed: coreutils-9.0-8.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: coreutils-common-9.0-8.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: cpio-2.13-12.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: cracklib-2.9.6-28.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: cracklib-dicts-2.9.6-28.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: crypto-policies-20220428-1.gitdfb10ea.fc36.noarch
+2022-10-09T05:27:17+0000 DEBUG Installed: crypto-policies-scripts-20220428-1.gitdfb10ea.fc36.noarch
+2022-10-09T05:27:17+0000 DEBUG Installed: cryptsetup-libs-2.4.3-2.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: curl-7.82.0-8.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: cyrus-sasl-lib-2.1.27-18.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: dbus-1:1.14.0-1.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: dbus-broker-32-1.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: dbus-common-1:1.14.0-1.fc36.noarch
+2022-10-09T05:27:17+0000 DEBUG Installed: dbus-libs-1:1.14.0-1.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: deltarpm-3.6.2-11.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: device-mapper-1.02.175-7.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: device-mapper-libs-1.02.175-7.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: diffutils-3.8-2.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: dnf-4.14.0-1.fc36.noarch
+2022-10-09T05:27:17+0000 DEBUG Installed: dnf-data-4.14.0-1.fc36.noarch
+2022-10-09T05:27:17+0000 DEBUG Installed: dracut-057-3.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: elfutils-debuginfod-client-0.187-4.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: elfutils-default-yama-scope-0.187-4.fc36.noarch
+2022-10-09T05:27:17+0000 DEBUG Installed: elfutils-libelf-0.187-4.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: elfutils-libs-0.187-4.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: expat-2.4.9-1.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: fedora-gpg-keys-36-4.noarch
+2022-10-09T05:27:17+0000 DEBUG Installed: fedora-release-36-18.noarch
+2022-10-09T05:27:17+0000 DEBUG Installed: fedora-release-common-36-18.noarch
+2022-10-09T05:27:17+0000 DEBUG Installed: fedora-release-identity-basic-36-18.noarch
+2022-10-09T05:27:17+0000 DEBUG Installed: fedora-repos-36-4.noarch
+2022-10-09T05:27:17+0000 DEBUG Installed: file-5.41-4.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: file-libs-5.41-4.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: filesystem-3.18-2.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: findutils-1:4.9.0-1.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: fuse-libs-2.9.9-14.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: gawk-5.1.1-2.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: gawk-all-langpacks-5.1.1-2.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: gdbm-libs-1:1.22-2.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: gettext-0.21-9.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: gettext-libs-0.21-9.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: glib2-2.72.3-1.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: glibc-2.35-17.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: glibc-common-2.35-17.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: glibc-gconv-extra-2.35-17.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: glibc-minimal-langpack-2.35-17.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: gmp-1:6.2.1-2.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: gnupg2-2.3.7-3.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: gnupg2-smime-2.3.7-3.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: gnutls-3.7.7-1.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: gpgme-1.17.0-4.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: grep-3.7-2.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: grub2-common-1:2.06-53.fc36.noarch
+2022-10-09T05:27:17+0000 DEBUG Installed: grub2-tools-1:2.06-53.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: grub2-tools-minimal-1:2.06-53.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: grubby-8.40-67.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: gzip-1.11-3.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: ima-evm-utils-1.4-5.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: json-c-0.15-3.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: kbd-2.4.0-9.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: kbd-misc-2.4.0-9.fc36.noarch
+2022-10-09T05:27:17+0000 DEBUG Installed: keyutils-libs-1.6.1-4.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: kmod-29-7.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: kmod-libs-29-7.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: kpartx-0.8.7-8.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: krb5-libs-1.19.2-11.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: libacl-2.3.1-3.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: libarchive-3.5.3-3.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: libargon2-20171227-9.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: libassuan-2.5.5-4.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: libattr-2.5.1-4.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: libblkid-2.38-1.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: libbpf-2:0.7.0-3.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: libbrotli-1.0.9-7.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: libcap-2.48-4.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: libcap-ng-0.8.3-1.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: libcbor-0.7.0-5.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: libcom_err-1.46.5-2.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: libcomps-0.1.18-2.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: libcurl-7.82.0-8.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: libdb-5.3.28-51.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: libdnf-0.68.0-1.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: libeconf-0.4.0-3.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: libevent-2.1.12-6.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: libfdisk-2.38-1.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: libffi-3.4.2-8.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: libfido2-1.10.0-3.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: libfsverity-1.4-7.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: libgcc-12.2.1-2.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: libgcrypt-1.10.1-3.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: libgomp-12.2.1-2.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: libgpg-error-1.45-1.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: libicu-69.1-6.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: libidn2-2.3.3-1.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: libkcapi-1.4.0-2.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: libkcapi-hmaccalc-1.4.0-2.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: libksba-1.6.0-3.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: libmodulemd-2.14.0-2.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: libmount-2.38-1.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: libnghttp2-1.46.0-2.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: libnsl2-2.0.0-3.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: libpsl-0.21.1-5.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: libpwquality-1.4.4-7.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: librepo-1.14.4-1.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: libreport-filesystem-2.17.4-1.fc36.noarch
+2022-10-09T05:27:17+0000 DEBUG Installed: libseccomp-2.5.3-2.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: libsecret-0.20.5-1.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: libselinux-3.3-4.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: libsemanage-3.3-3.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: libsepol-3.3-3.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: libsigsegv-2.14-2.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: libsmartcols-2.38-1.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: libsolv-0.7.22-1.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: libssh-0.9.6-4.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: libssh-config-0.9.6-4.fc36.noarch
+2022-10-09T05:27:17+0000 DEBUG Installed: libstdc++-12.2.1-2.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: libtasn1-4.18.0-2.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: libtirpc-1.3.3-0.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: libunistring-1.0-1.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: libusb1-1.0.25-8.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: libuser-0.63-10.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: libutempter-1.2.1-6.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: libuuid-2.38-1.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: libverto-0.3.2-3.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: libxcrypt-4.4.28-1.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: libxcrypt-compat-4.4.28-1.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: libxkbcommon-1.4.0-1.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: libxml2-2.9.14-1.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: libyaml-0.2.5-7.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: libzstd-1.5.2-2.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: lua-libs-5.4.4-3.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: lz4-libs-1.9.3-4.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: memstrack-0.2.4-2.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: mkpasswd-5.5.13-1.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: mozjs91-91.13.0-1.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: mpdecimal-2.5.1-3.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: mpfr-4.1.0-9.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: ncurses-base-6.2-9.20210508.fc36.noarch
+2022-10-09T05:27:17+0000 DEBUG Installed: ncurses-libs-6.2-9.20210508.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: nettle-3.8-1.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: npth-1.6-8.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: openldap-2.6.3-1.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: openssl-libs-1:3.0.5-1.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: openssl-pkcs11-0.4.12-2.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: os-prober-1.77-9.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: p11-kit-0.24.1-2.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: p11-kit-trust-0.24.1-2.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: pam-1.5.2-13.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: pam-libs-1.5.2-13.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: passwd-0.80-12.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: pcre-8.45-1.fc36.1.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: pcre2-10.40-1.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: pcre2-syntax-10.40-1.fc36.noarch
+2022-10-09T05:27:17+0000 DEBUG Installed: pcsc-lite-1.9.8-1.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: pcsc-lite-ccid-1.5.0-1.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: pcsc-lite-libs-1.9.8-1.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: pigz-2.7-1.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: pinentry-1.2.0-2.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: polkit-0.120-5.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: polkit-libs-0.120-5.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: polkit-pkla-compat-0.1-21.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: popt-1.18-7.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: procps-ng-3.3.17-4.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: protobuf-c-1.4.1-2.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: publicsuffix-list-dafsa-20210518-4.fc36.noarch
+2022-10-09T05:27:17+0000 DEBUG Installed: python-pip-wheel-21.3.1-3.fc36.noarch
+2022-10-09T05:27:17+0000 DEBUG Installed: python-setuptools-wheel-59.6.0-2.fc36.noarch
+2022-10-09T05:27:17+0000 DEBUG Installed: python-unversioned-command-3.10.7-1.fc36.noarch
+2022-10-09T05:27:17+0000 DEBUG Installed: python3-3.10.7-1.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: python3-dnf-4.14.0-1.fc36.noarch
+2022-10-09T05:27:17+0000 DEBUG Installed: python3-gpg-1.17.0-4.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: python3-hawkey-0.68.0-1.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: python3-libcomps-0.1.18-2.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: python3-libdnf-0.68.0-1.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: python3-libs-3.10.7-1.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: python3-rpm-4.17.1-3.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: python3-unbound-1.16.3-1.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: qrencode-libs-4.1.1-2.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: readline-8.1-6.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: rootfiles-8.1-31.fc36.noarch
+2022-10-09T05:27:17+0000 DEBUG Installed: rpm-4.17.1-3.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: rpm-build-libs-4.17.1-3.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: rpm-libs-4.17.1-3.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: rpm-plugin-systemd-inhibit-4.17.1-3.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: rpm-sign-libs-4.17.1-3.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: sed-4.8-10.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: setup-2.14.1-1.fc36.noarch
+2022-10-09T05:27:17+0000 DEBUG Installed: shadow-utils-2:4.11.1-4.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: sqlite-libs-3.36.0-5.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: systemd-250.8-1.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: systemd-libs-250.8-1.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: systemd-networkd-250.8-1.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: systemd-pam-250.8-1.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: systemd-resolved-250.8-1.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: systemd-udev-250.8-1.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: tpm2-tools-5.2-2.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: tpm2-tss-3.2.0-3.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: tzdata-2022d-1.fc36.noarch
+2022-10-09T05:27:17+0000 DEBUG Installed: unbound-anchor-1.16.3-1.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: unbound-libs-1.16.3-1.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: util-linux-2.38-1.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: util-linux-core-2.38-1.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: vim-data-2:9.0.475-1.fc36.noarch
+2022-10-09T05:27:17+0000 DEBUG Installed: vim-minimal-2:9.0.475-1.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: whois-nls-5.5.13-1.fc36.noarch
+2022-10-09T05:27:17+0000 DEBUG Installed: xkeyboard-config-2.35.1-1.fc36.noarch
+2022-10-09T05:27:17+0000 DEBUG Installed: xz-5.2.5-9.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: xz-libs-5.2.5-9.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: zchunk-libs-1.2.3-1.fc36.x86_64
+2022-10-09T05:27:17+0000 DEBUG Installed: zlib-1.2.11-33.fc36.x86_64
+2022-10-09T05:27:17+0000 INFO Complete!
+2022-10-09T05:27:17+0000 DDEBUG Cleaning up.
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/libuuid-2.38-1.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/rpm-build-libs-4.17.1-3.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/libssh-config-0.9.6-4.fc36.noarch.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/util-linux-2.38-1.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/fuse-libs-2.9.9-14.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/libtasn1-4.18.0-2.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/libeconf-0.4.0-3.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/grub2-tools-2.06-53.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/libsemanage-3.3-3.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/libsigsegv-2.14-2.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/libsepol-3.3-3.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/sed-4.8-10.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/libbpf-0.7.0-3.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/gnupg2-smime-2.3.7-3.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/audit-libs-3.0.9-1.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/libarchive-3.5.3-3.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/dbus-1.14.0-1.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/procps-ng-3.3.17-4.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/rpm-sign-libs-4.17.1-3.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/readline-8.1-6.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/libxkbcommon-1.4.0-1.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/python3-libdnf-0.68.0-1.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/crypto-policies-scripts-20220428-1.gitdfb10ea.fc36.noarch.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/file-libs-5.41-4.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/libdb-5.3.28-51.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/libssh-0.9.6-4.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/libmount-2.38-1.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/ima-evm-utils-1.4-5.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/ncurses-base-6.2-9.20210508.fc36.noarch.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/qrencode-libs-4.1.1-2.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/device-mapper-1.02.175-7.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/bzip2-libs-1.0.8-11.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/libstdc++-12.2.1-2.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/kpartx-0.8.7-8.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/alternatives-1.19-2.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/polkit-0.120-5.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/glibc-common-2.35-17.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/grep-3.7-2.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/rpm-4.17.1-3.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/libmodulemd-2.14.0-2.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/libselinux-3.3-4.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/ncurses-libs-6.2-9.20210508.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/sqlite-libs-3.36.0-5.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/libyaml-0.2.5-7.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/fedora-release-36-18.noarch.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/python3-libcomps-0.1.18-2.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/kbd-2.4.0-9.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/libfdisk-2.38-1.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/gettext-0.21-9.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/gdbm-libs-1.22-2.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/crypto-policies-20220428-1.gitdfb10ea.fc36.noarch.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/mkpasswd-5.5.13-1.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/elfutils-debuginfod-client-0.187-4.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/deltarpm-3.6.2-11.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/libattr-2.5.1-4.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/libpwquality-1.4.4-7.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/pam-libs-1.5.2-13.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/python3-rpm-4.17.1-3.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/unbound-anchor-1.16.3-1.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/grubby-8.40-67.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/mpfr-4.1.0-9.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/expat-2.4.9-1.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/libicu-69.1-6.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/librepo-1.14.4-1.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/pam-1.5.2-13.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/unbound-libs-1.16.3-1.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/libgomp-12.2.1-2.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/setup-2.14.1-1.fc36.noarch.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/fedora-release-common-36-18.noarch.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/python-unversioned-command-3.10.7-1.fc36.noarch.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/libcom_err-1.46.5-2.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/systemd-networkd-250.8-1.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/libcap-2.48-4.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/elfutils-libelf-0.187-4.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/libffi-3.4.2-8.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/findutils-4.9.0-1.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/libfido2-1.10.0-3.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/pcre2-syntax-10.40-1.fc36.noarch.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/python3-libs-3.10.7-1.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/libtirpc-1.3.3-0.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/pcsc-lite-1.9.8-1.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/cracklib-2.9.6-28.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/lz4-libs-1.9.3-4.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/gnupg2-2.3.7-3.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/libnghttp2-1.46.0-2.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/coreutils-9.0-8.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/nettle-3.8-1.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/publicsuffix-list-dafsa-20210518-4.fc36.noarch.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/authselect-1.4.0-1.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/dnf-4.14.0-1.fc36.noarch.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/os-prober-1.77-9.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/pcsc-lite-ccid-1.5.0-1.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/fedora-repos-36-4.noarch.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/glibc-2.35-17.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/curl-7.82.0-8.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/libevent-2.1.12-6.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/json-c-0.15-3.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/grub2-common-2.06-53.fc36.noarch.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/util-linux-core-2.38-1.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/zchunk-libs-1.2.3-1.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/libxml2-2.9.14-1.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/libuser-0.63-10.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/python3-hawkey-0.68.0-1.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/popt-1.18-7.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/xz-libs-5.2.5-9.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/shadow-utils-4.11.1-4.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/kmod-29-7.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/elfutils-libs-0.187-4.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/memstrack-0.2.4-2.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/libgcrypt-1.10.1-3.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/libkcapi-1.4.0-2.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/gmp-6.2.1-2.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/gawk-5.1.1-2.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/cyrus-sasl-lib-2.1.27-18.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/glib2-2.72.3-1.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/libcurl-7.82.0-8.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/libidn2-2.3.3-1.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/python3-3.10.7-1.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/zlib-1.2.11-33.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/libgpg-error-1.45-1.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/elfutils-default-yama-scope-0.187-4.fc36.noarch.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/keyutils-libs-1.6.1-4.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/krb5-libs-1.19.2-11.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/openssl-pkcs11-0.4.12-2.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/libxcrypt-4.4.28-1.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/polkit-pkla-compat-0.1-21.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/p11-kit-0.24.1-2.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/pcre-8.45-1.fc36.1.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/mozjs91-91.13.0-1.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/fedora-gpg-keys-36-4.noarch.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/libsecret-0.20.5-1.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/libdnf-0.68.0-1.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/cryptsetup-libs-2.4.3-2.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/pcre2-10.40-1.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/cracklib-dicts-2.9.6-28.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/systemd-libs-250.8-1.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/dracut-057-3.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/vim-minimal-9.0.475-1.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/grub2-tools-minimal-2.06-53.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/libcbor-0.7.0-5.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/python3-unbound-1.16.3-1.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/libksba-1.6.0-3.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/basesystem-11-13.fc36.noarch.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/file-5.41-4.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/npth-1.6-8.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/kbd-misc-2.4.0-9.fc36.noarch.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/filesystem-3.18-2.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/protobuf-c-1.4.1-2.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/libblkid-2.38-1.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/whois-nls-5.5.13-1.fc36.noarch.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/glibc-minimal-langpack-2.35-17.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/systemd-pam-250.8-1.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/cpio-2.13-12.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/kmod-libs-29-7.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/libassuan-2.5.5-4.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/rootfiles-8.1-31.fc36.noarch.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/coreutils-common-9.0-8.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/tzdata-2022d-1.fc36.noarch.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/libseccomp-2.5.3-2.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/libcap-ng-0.8.3-1.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/libsmartcols-2.38-1.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/gnutls-3.7.7-1.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/dbus-common-1.14.0-1.fc36.noarch.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/gettext-libs-0.21-9.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/gpgme-1.17.0-4.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/p11-kit-trust-0.24.1-2.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/openssl-libs-3.0.5-1.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/polkit-libs-0.120-5.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/systemd-resolved-250.8-1.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/libunistring-1.0-1.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/libfsverity-1.4-7.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/libgcc-12.2.1-2.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/libargon2-20171227-9.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/lua-libs-5.4.4-3.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/libacl-2.3.1-3.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/mpdecimal-2.5.1-3.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/vim-data-9.0.475-1.fc36.noarch.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/tpm2-tools-5.2-2.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/python-pip-wheel-21.3.1-3.fc36.noarch.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/tpm2-tss-3.2.0-3.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/dbus-libs-1.14.0-1.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/libxcrypt-compat-4.4.28-1.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/libutempter-1.2.1-6.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/pigz-2.7-1.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/systemd-udev-250.8-1.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/libverto-0.3.2-3.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/gawk-all-langpacks-5.1.1-2.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/fedora-release-identity-basic-36-18.noarch.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/dbus-broker-32-1.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/libbrotli-1.0.9-7.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/python3-gpg-1.17.0-4.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/diffutils-3.8-2.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/libsolv-0.7.22-1.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/rpm-plugin-systemd-inhibit-4.17.1-3.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/libpsl-0.21.1-5.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/passwd-0.80-12.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/gzip-1.11-3.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/bash-5.1.16-3.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/device-mapper-libs-1.02.175-7.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/systemd-250.8-1.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/openldap-2.6.3-1.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/xz-5.2.5-9.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/python-setuptools-wheel-59.6.0-2.fc36.noarch.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/glibc-gconv-extra-2.35-17.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/rpm-libs-4.17.1-3.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/dnf-data-4.14.0-1.fc36.noarch.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/libnsl2-2.0.0-3.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/libzstd-1.5.2-2.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/pinentry-1.2.0-2.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/xkeyboard-config-2.35.1-1.fc36.noarch.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/libreport-filesystem-2.17.4-1.fc36.noarch.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/authselect-libs-1.4.0-1.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/pcsc-lite-libs-1.9.8-1.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/libkcapi-hmaccalc-1.4.0-2.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/libcomps-0.1.18-2.fc36.x86_64.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/ca-certificates-2022.2.54-1.2.fc36.noarch.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/updates-a50f2ed408319fa8/packages/python3-dnf-4.14.0-1.fc36.noarch.rpm removed
+2022-10-09T05:27:17+0000 DDEBUG /home/anatasluo/miniOS/rootfs/fedora-fs/var/cache/dnf/fedora-e58e3c9673d413e5/packages/libusb1-1.0.25-8.fc36.x86_64.rpm removed

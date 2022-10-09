@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metalink version="3.0" xmlns="http://www.metalinker.org/" type="dynamic" pubdate="Sun, 09 Oct 2022 05:26:10 GMT" generator="mirrormanager" xmlns:mm0="http://fedorahosted.org/mirrormanager">
+ <files>
+  <file name="repomd.xml">
+   <mm0:timestamp>1665250127</mm0:timestamp>
+   <size>8313</size>
+   <verification>
+    <hash type="md5">57cc3c31bc3a7dec714d938b8797fe88</hash>
+    <hash type="sha1">48e0b90600c9baddf31434cb8bfabb755b9ed1ee</hash>
+    <hash type="sha256">cd02ff7a4712fc4fde21d768962d6577257732e212bf6882c22c1a34cd9d251f</hash>
+    <hash type="sha512">fc56e852bd461c55a2e09ca31961175d67021b4f786d423bad011d8baa2ee84fae23eace808fee69dd53a3b8bd68bdc9090d6e5056bc71ecbb00a6e2a711211f</hash>
+   </verification>
+   <mm0:alternates>
+    <mm0:alternate>
+      <mm0:timestamp>1665157811</mm0:timestamp>
+      <size>8314</size>
+      <verification>
+       <hash type="md5">57d3349e864a03109d29c82b899c1caf</hash>
+       <hash type="sha1">0140b134b97c29582a75a4133fc59c9148a4310a</hash>
+       <hash type="sha256">dbc17b38387e4454542b82e35c41b98f3370167417853883a0e1d1146190eeb4</hash>
+       <hash type="sha512">1ef7c5c3ae1155f07553842d6a0e672e50542758d23adbf34783495bd77daf91449181a1ef05d983568fd5949a54b4ccb6856512a4db329e2800a0f11eff0da3</hash>
+      </verification>
+    </mm0:alternate>
+    <mm0:alternate>
+      <mm0:timestamp>1665069005</mm0:timestamp>
+      <size>8313</size>
+      <verification>
+       <hash type="md5">371cf9a529b7a0fda6caa73002ae13b3</hash>
+       <hash type="sha1">90489f496bf7adcc646a16f3407d73c079b7b296</hash>
+       <hash type="sha256">2f15f2b268b5f50b551a02ecccf53a1af32b039b1f0ec8005e750c8e08f7e81f</hash>
+       <hash type="sha512">f829561c228a2c02761a786dde8c31355f18af2e2aec89acafbf68ca4e063ee2e4de5fe736e2b345a4c1a2fbf0fb0784cc42eeccc0488fe1df33fc00e71332b3</hash>
+      </verification>
+    </mm0:alternate>
+   </mm0:alternates>
+   <resources maxconnections="1">
+    <url protocol="http" type="http" location="US" preference="100">http://fedora.mirror.constant.com/fedora/linux/updates/36/Everything/x86_64/repodata/repomd.xml</url>
+    <url protocol="https" type="https" location="US" preference="100">https://fedora.mirror.constant.com/fedora/linux/updates/36/Everything/x86_64/repodata/repomd.xml</url>
+    <url protocol="http" type="http" location="JP" preference="99">http://ftp.riken.jp/Linux/fedora/updates/36/Everything/x86_64/repodata/repomd.xml</url>
+    <url protocol="rsync" type="rsync" location="JP" preference="99">rsync://ftp.riken.jp/fedora/updates/36/Everything/x86_64/repodata/repomd.xml</url>
+    <url protocol="https" type="https" location="JP" preference="99">https://ftp.riken.jp/Linux/fedora/updates/36/Everything/x86_64/repodata/repomd.xml</url>
+    <url protocol="http" type="http" location="JP" preference="98">http://ftp.iij.ad.jp/pub/linux/Fedora/fedora/linux/updates/36/Everything/x86_64/repodata/repomd.xml</url>
+    <url protocol="rsync" type="rsync" location="JP" preference="98">rsync://ftp.iij.ad.jp/pub/linux/Fedora/fedora/linux/updates/36/Everything/x86_64/repodata/repomd.xml</url>
+    <url protocol="https" type="https" location="CN" preference="97">https://mirrors.tuna.tsinghua.edu.cn/fedora/updates/36/Everything/x86_64/repodata/repomd.xml</url>
+    <url protocol="http" type="http" location="CN" preference="97">http://mirrors.tuna.tsinghua.edu.cn/fedora/updates/36/Everything/x86_64/repodata/repomd.xml</url>
+    <url protocol="rsync" type="rsync" location="CN" preference="97">rsync://mirrors.tuna.tsinghua.edu.cn/fedora/updates/36/Everything/x86_64/repodata/repomd.xml</url>
+    <url protocol="https" type="https" location="SG" preference="96">https://download.nus.edu.sg/mirror/fedora/linux/updates/36/Everything/x86_64/repodata/repomd.xml</url>
+    <url protocol="http" type="http" location="SG" preference="96">http://download.nus.edu.sg/mirror/fedora/linux/updates/36/Everything/x86_64/repodata/repomd.xml</url>
+    <url protocol="rsync" type="rsync" location="SG" preference="96">rsync://download.nus.edu.sg/fedora/linux/updates/36/Everything/x86_64/repodata/repomd.xml</url>
+   </resources>
+  </file>
+ </files>
+</metalink>
